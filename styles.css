@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+:root {
+    --gray : rgb(238, 232, 232);
+    --gray-white: rgb(245, 241, 241);
+    --green : rgb(5, 107, 60);
+    --light-green : rgb(6, 155, 66);
+}
+nav {
+    background-color: var(--gray);
+    padding: 1em 2.5em .5em;
+    display: flex;
+    justify-content: space-between;  
+    font-weight: 600;
+}
+nav li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.l-nav {
+    display: flex;
+    align-items: center;
+}
+.fa-diamond {
+    color: var(--green);
+    padding-right: 3px;
+}
+.l-nav span {
+    color: var(--light-green);
+}
+.r-nav {
+    display: flex;
+}
+.mid-nav {
+    padding-right: 2em;
+}
+.mid-nav li {
+    display: inline-block;
+    padding-left: 1em;
+}
+.action-nav {
+    display: flex;
+    flex-direction: row;
+}
+.action-nav button {
+    margin-right: 1em;
+}
+.btn {
+    padding: .5em 2em;
+    background-color: var(--green);
+    border: none;
+    border-radius: 2em;
+}
+.btn-text {
+    color: var(--gray-white);
+}
+.action-nav a {
+    align-self: center;
+}
+.search {
+    color: var(--light-green);
+}
+main {
+    padding: 2em 3em 2em 4em;
+}
+.page-banner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3em;
+}
+.page-banner small,
+.page-banner span {
+    color: var(--light-green);
+    font-weight: 800;
+}
+.page-banner h1 {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: .75em;
+    line-height: 1em;
+}
+.l-banner .purchase-btn {
+    margin-top: 3em;
+}
+.banner-icon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4em;
+}
+.icon {
+    /* display: block; */
+    margin-left: 5px;
+    color: var(--green);
+}
+.r-banner {
+    height: 350px;
+    width: 380px;
+    background-color: var(--green);
+    border-radius: 67% 33% 40% 60% / 37% 38% 62% 63%  ;
+    margin-right: 3em;
+}
+.r-img{
+    height: 350px;
+    width: 380px;
+}
+.r-img img {
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle();
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.products {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.products-text {
+    width: 37%;
+    padding-right: 2em;
+    font-size: 1.45em;
+    line-height: 2.25em;
+}
+.products span {
+    color: var(--light-green);
+}
+.products-card {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.card{
+    width: 45%;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    padding: 1em 2em;
+    border: 1px solid #fff;
+    box-shadow: 4px 4px 4px #7c7b7bb6;
+    border-radius: 1.5em;
+}
+.card-icon {
+    font-size: 1.75em;
+    color: var(--green);
+}
+.card h3 {
+    padding-top: 1em;
+    padding-bottom: .75em;
+    font-weight: 600;
+}
+.card p {
+    font-size: .8em;
+}
+.mission {
+    display: flex;
+    padding-top: 5em;
+    align-items: center;
+}
+.image-stack {
+    width: 60%;
+    height: 300px;
+    display: flex;
+}
+.mission-text {
+    width: 40%;
+}
+.bottom-img, .top-img {
+    height: 300px;
+    width: 400px;
+}
+.bottom-img {
+    background: url(./images/emma-dau-n_4iTY1KmDE-unsplash.jpg);
+    background-size: cover;
+    border-radius: 2em;
+    margin-top: -4em;
+}
+.bottom-bg {
+    background: rgba(30, 209, 111, 0.534);
+    height: 100%;
+    border-radius: 2em;
+}
+.top-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 2em;
+}
+.top-img {
+    z-index: 100;
+    margin-left: -21em;
+}
+.mission-text {
+    margin-left: -7em;
+    margin-top: -5em;
+}
+.mission-text span {
+    color: var(--green);
+}
+.mission-text h2 {
+    line-height: 1.5em;
+    padding-bottom: .8em;
+}
+.mission-text p {
+    padding-bottom: 2em;
+}
+.projects-text {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+.projects-text span {
+    color: var(--green);
+}
+.projects-text h2 {
+    line-height: 1.5em;
+    font-size: 1.75em;
+}
+.r-project {
+    width: 30%;
+}
+.l-project {
+    width: 70%;
+    padding-left: 2em;
+    text-align: justify;
+}
+.project-photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.project-img {
+    width: 25%;
+    height: 250px;
+    padding: .25em;
+}
+.project-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
