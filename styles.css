@@ -341,12 +341,16 @@ main {
 .support-card {
     width: 23%;
     background: rgb(199, 197, 197);
-    /* padding: 1em 3em ; */
     border-radius: .5em;
+}
+.support-card:nth-of-type(even) {
     border-top: 7.5px solid black;
 }
+.support-card:nth-of-type(odd) {
+    border-top: 7.5px solid var(--light-green);
+}
 .support-card:not(:nth-child(4)) {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .support-card h3{
     padding: 1em;
@@ -355,8 +359,34 @@ main {
 .support-card p {
     text-align: center;
 }
-.support-card .price:nth-child(odd){
+.price {
+    color: #fff;
     padding-top: 2em;
     padding-bottom: 2em;
-    background-color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.price span {
+    font-weight: 800;
+    font-size: 2em;
+    padding-right: 2px;
+}
+.support-card:nth-of-type(even) .price{
+    background: black;
+}
+.support-card:nth-of-type(odd) .price{
+    background: var(--light-green);
+}
+.info{
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+.info li {
+    list-style-type: none;
+    line-height: 1.5em;
+    font-size: .9em;
+}
+.info li::before {
+    content: "\2713\0020";
 }
